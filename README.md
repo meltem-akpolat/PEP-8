@@ -1,4 +1,4 @@
-                                        # PYTHON CODING STYLE
+#                                         PYTHON CODING STYLE
 
 #GİRİNTİLEME
 
