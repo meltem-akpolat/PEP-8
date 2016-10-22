@@ -190,7 +190,7 @@ Modülleri aynı satırda değilde farklı satırlarda import etmeliyiz.
     from subprocess import Popen, PIPE
 
 
-#import ederken aşağıdaki sıralamayı kullanmalıyız.
+import ederken aşağıdaki sıralamayı kullanmalıyız.
 
 
 1.standard library imports
@@ -380,7 +380,7 @@ Varsayılan bir parametre değerini belirtirken kullanılan '=' operatöründe b
     return magic(r = real, i = imag)
 
 
-#'->' ifadesini kullanırken her zaman boşluk kullanmalıyız.
+'->' ifadesini kullanırken her zaman boşluk kullanmalıyız.
 
 
 #Doğru kullanım:
@@ -397,7 +397,7 @@ Varsayılan bir parametre değerini belirtirken kullanılan '=' operatöründe b
     def munge()->PosInt: ...
 
 
-#Default değer atanırken boşluk kullanmalıyız.
+Default değer atanırken boşluk kullanmalıyız.
 
 
 #Doğru kullanım:
@@ -414,7 +414,7 @@ Varsayılan bir parametre değerini belirtirken kullanılan '=' operatöründe b
     def munge(input: AnyStr, limit = 1000): ...
 
 
-#Birleşik ifadeler genellikle tavsiye edilmez.
+Birleşik ifadeler genellikle tavsiye edilmez.
 
 
 #Doğru kullanım:
@@ -469,9 +469,9 @@ if/for/while kullanılırken dikkat etmemiz gereken noktalar:
     if foo == 'blah': one(); two(); three()
 
 
-#Block comment-ler '#' ifadesi ile başlamalıdır.
+Block comment-ler '#' ifadesi ile başlamalıdır.
 
-#Inline comment-larda
+Inline comment-larda
 
 
 #Doğru kullanım:
@@ -486,7 +486,7 @@ if/for/while kullanılırken dikkat etmemiz gereken noktalar:
 
 Tüm public modüller, fonksiyonlar, sınıflar ve metodlar için Docstring-ler yazmalıyız.
 
-#Docstring-ler """ ile başlar """ ile biter.
+Docstring-ler """ ile başlar """ ile biter.
 
 """Return a foobang
 
@@ -509,7 +509,7 @@ Type değişkenlerinde PEP 484'e göre kısa isimler kullanmalıyız. Type deği
     KT_contra = TypeVar('KT_contra', contravariant=True)
 
 
-#is not operatörü not ... is den daha kullanışlıdır.
+is not operatörü not ... is den daha kullanışlıdır.
 
 
 #Doğru kullanım:
@@ -522,7 +522,7 @@ Type değişkenlerinde PEP 484'e göre kısa isimler kullanmalıyız. Type deği
     if not foo is None:
 
 
-#Tanımlama işlemlerinde lambda yerine def fonksiyonunu kullanmalıyız.
+Tanımlama işlemlerinde lambda yerine def fonksiyonunu kullanmalıyız.
 
 
 #Doğru kullanım:
