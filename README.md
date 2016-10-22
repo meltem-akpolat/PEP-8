@@ -17,11 +17,11 @@ print fonksiyonunu ayırt edebilmek için daha fazla girinti kullanmalıyız.
 
     def long_function_name(
 
-        var_one, var_two, var_three,
+          var_one, var_two, var_three,
 
-        var_four):
+          var_four):
 
-     print(var_one)
+       print(var_one)
   
 
 Girinti seviyemiz her satırda aynı olmalıdır.
@@ -51,9 +51,9 @@ Girinti olarak gerekli olan girintiyi ayırt edemediğimiz durumlar.
 
         var_one, var_two, var_three,
     
-       var_four):
+        var_four):
     
-       print(var_one)
+        print(var_one)
        
 
 #İsteğe bağlı 4-boşluk kuralı:
@@ -76,7 +76,7 @@ if kullanırken ekstra boşluk kullanmayabiliriz.
 
         that_is_another_thing):
 
-       do_something()
+        do_something()
 
 
 Yorum satırı eklerken kullanmayabiliriz.
@@ -85,6 +85,8 @@ Yorum satırı eklerken kullanmayabiliriz.
     if (this_is_one_thing and
 
         that_is_another_thing):
+        
+        #......
 
         do_something()
      
@@ -94,9 +96,9 @@ Koşullu devamlarda girinti eklemeliyiz.
 
     if (this_is_one_thing
 
-         and that_is_another_thing):
+           and that_is_another_thing):
       
-       do_something()
+        do_something()
 
 
 Parantez kullanım şekli aşağıdaki gibi olabilir.
@@ -114,9 +116,9 @@ Parantez kullanım şekli aşağıdaki gibi olabilir.
 
         'a', 'b', 'c',
     
-       'd', 'e', 'f',
+        'd', 'e', 'f',
     
-        )
+         )
 
 
 Ya da aşağıdaki şekilde:
@@ -126,7 +128,7 @@ Ya da aşağıdaki şekilde:
 
         1, 2, 3,
     
-       4, 5, 6,
+        4, 5, 6,
     
     ]
 
@@ -146,7 +148,7 @@ Ya da aşağıdaki şekilde:
 
     income = (gross_wages
 
-              + taxable_interest
+             + taxable_interest
           
              + (dividends - qualified_dividends)
           
@@ -159,9 +161,9 @@ Ya da aşağıdaki şekilde:
 
     income = (gross_wages +
 
-              taxable_interest +
+             taxable_interest +
           
-              (dividends - qualified_dividends) -
+             (dividends - qualified_dividends) -
           
              ira_deduction -
           
@@ -185,7 +187,7 @@ Modülleri aynı satırda değilde farklı satırlarda import etmeliyiz.
 
     import sys, os
 
-    from .. import .. yapısında aynı satırda yazabiliriz.
+from .. import .. yapısında aynı satırda yazabiliriz.
 
     from subprocess import Popen, PIPE
 
@@ -211,25 +213,6 @@ Bu şekilde kodlarınız daha okunabilir olacaktır.
 
     from mypkg.sibling import example
 
-
-#Module Level Dunder Names
-
-Dunder name-leri kullanmak için from __future__ import .. kullanırız. (Dunder name-ler __ ile başlar __ ile biter.Dikkat edin iki alt tire kullanılır.)
-
-
-#Örnek olarak:
-
-    from __future__ import barry_as_FLUFL
-
-    __all__ = ['a', 'b', 'c']
-
-    __version__ = '0.1'
-
-    __author__ = 'Cardinal Biggles'
-
-
-    import os
-    import sys
 
 #Pet Peeves
 
