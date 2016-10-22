@@ -1,6 +1,6 @@
                                          PYTHON CODING STYLE
 
-* **GİRİNTİLEME**
+#GİRİNTİLEME
 
 Girinti seviyesinin başına 4 boşluk bırakmalıyız. Argümanları yazarken satır atlarsak kodun anlaşılabilir olması açısından
 argümanları aynı hizada yazmalıyız.
