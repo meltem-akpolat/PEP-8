@@ -1,11 +1,11 @@
                                          PYTHON CODING STYLE
 
-#GİRİNTİLEME
+# GİRİNTİLEME
 
 Girinti seviyesinin başına 4 boşluk bırakmalıyız. Argümanları yazarken satır atlarsak kodun anlaşılabilir olması açısından
 argümanları aynı hizada yazmalıyız.
 
-#Doğru kullanım, açılış sınırlayıcı ile aynı hizada olmasıdır.
+# Doğru kullanım, açılış sınırlayıcı ile aynı hizada olmasıdır.
 
     foo = long_function_name(var_one, var_two,
 
@@ -34,7 +34,7 @@ Girinti seviyemiz her satırda aynı olmalıdır.
         var_three, var_four)
         
 
-#Yanlış kullanım:
+# Yanlış kullanım:
 
 Dikey hizalama kullanmadığımızda argümanlar ilk satırda yasaklanır.
 
@@ -56,7 +56,7 @@ Girinti olarak gerekli olan girintiyi ayırt edemediğimiz durumlar.
         print(var_one)
        
 
-#İsteğe bağlı 4-boşluk kuralı:
+# İsteğe bağlı 4-boşluk kuralı:
 
 
 4 boşluk yerine daha az boşlukta bırakabiliriz.
@@ -141,10 +141,10 @@ Ya da aşağıdaki şekilde:
     )
 
 
-#Operatörleri kullanırken
+# Operatörleri kullanırken
 
 
-#Doğru kullanım şekli:
+# Doğru kullanım şekli:
 
     income = (gross_wages
 
@@ -157,7 +157,7 @@ Ya da aşağıdaki şekilde:
              - student_loan_interest)
 
 
-#Yanlış kullanım şekli:
+# Yanlış kullanım şekli:
 
     income = (gross_wages +
 
@@ -170,20 +170,20 @@ Ya da aşağıdaki şekilde:
              student_loan_interest)
           
 
-#IMPORT İŞLEMİ
+# IMPORT İŞLEMİ
 
 
 Modülleri aynı satırda değilde farklı satırlarda import etmeliyiz.
 
 
-#Doğru kullanım:
+# Doğru kullanım:
 
     import os
 
     import sys
 
 
-#Yanlış kullanım:
+# Yanlış kullanım:
 
     import sys, os
 
@@ -205,7 +205,7 @@ import ederken aşağıdaki sıralamayı kullanmalıyız.
 Bu şekilde kodlarınız daha okunabilir olacaktır.
 
 
-#Örnek olarak:
+# Örnek olarak:
 
     import mypkg.sibling
 
@@ -214,7 +214,7 @@ Bu şekilde kodlarınız daha okunabilir olacaktır.
     from mypkg.sibling import example
 
 
-#Pet Peeves
+# Pet Peeves
 
 Aşağıdaki durumlarda gereksiz boşlukardan kaçınmalıyız...
 
@@ -222,12 +222,12 @@ Aşağıdaki durumlarda gereksiz boşlukardan kaçınmalıyız...
   1) Parantez içinde parantez varsa:
 
 
-#Doğru kullanım:
+# Doğru kullanım:
 
     spam(ham[1], {eggs: 2})
 
 
-#Yanlış kullanım:
+# Yanlış kullanım:
 
     spam( ham[ 1 ], { eggs: 2 } )
 
@@ -235,19 +235,19 @@ Aşağıdaki durumlarda gereksiz boşlukardan kaçınmalıyız...
   2) Virgül, noktalı virgül ya da iki noktadan önce:
 
 
-#Doğru kullanım:
+# Doğru kullanım:
 
     if x == 4: print x, y; x, y = y, x
 
 
-#Yanlış kullnaım:
+# Yanlış kullnaım:
 
     if x == 4 : print x , y ; x , y = y , x
 
 
   3) Operatör kullanılırken:
 
-#Doğru kullanım:
+# Doğru kullanım:
 
     ham[1:9], ham[1:9:3], ham[:9:3], ham[1::3], ham[1:9:]
 
@@ -260,7 +260,7 @@ Aşağıdaki durumlarda gereksiz boşlukardan kaçınmalıyız...
     ham[lower + offset : upper + offset]
 
 
-#Yanlış kullanım:
+# Yanlış kullanım:
 
     ham[lower + offset:upper + offset]
 
@@ -273,31 +273,31 @@ Aşağıdaki durumlarda gereksiz boşlukardan kaçınmalıyız...
 
   4) Fonksiyon çağırırken kullanılan parantezlerde:
 
-#Doğru kullanım:
+# Doğru kullanım:
 
     spam(1)
 
 
-#Yanlış kullanım:
+# Yanlış kullanım:
 
     spam (1)
 
 
   5) Slicing ya da indexleme başlamadan açılan parantezlerden önce:
 
-#Doğru kullanım:
+# Doğru kullanım:
 
     dct['key'] = lst[index]
 
 
-#Yanlış kullanım:
+# Yanlış kullanım:
 
     dct ['key'] = lst [index]
 
 
   6) Atama operatörlerini hizalamak için:
 
-#Doğru kullnaım:
+# Doğru kullnaım:
 
     x = 1
 
@@ -306,7 +306,7 @@ Aşağıdaki durumlarda gereksiz boşlukardan kaçınmalıyız...
     long_variable = 3
 
 
-#Yanlış kullanım:
+# Yanlış kullanım:
 
     x             = 1
 
@@ -315,12 +315,12 @@ Aşağıdaki durumlarda gereksiz boşlukardan kaçınmalıyız...
     long_variable = 3
 
 
-#Diğer Öneriler
+# Diğer Öneriler
 
 Farklı operatörleri bir arada kullanırken düşük önceliğe sahip operatörler arasında birer boşluk bırakmalıyız.
 
 
-#Doğru kullanım:
+# Doğru kullanım:
 
     i = i + 1
 
@@ -333,7 +333,7 @@ Farklı operatörleri bir arada kullanırken düşük önceliğe sahip operatör
     c = (a+b) * (a-b)
 
 
-#Yanlış kullanım:
+# Yanlış kullanım:
 
     i=i+1
 
@@ -349,14 +349,14 @@ Farklı operatörleri bir arada kullanırken düşük önceliğe sahip operatör
 Varsayılan bir parametre değerini belirtirken kullanılan '=' operatöründe boşluk kullanmamalıyız.
 
 
-#Doğru kullanım:
+# Doğru kullanım:
 
     def complex(real, imag=0.0):
 
     return magic(r=real, i=imag)
 
 
-#Yanlış kullanım:
+# Yanlış kullanım:
 
     def complex(real, imag = 0.0):
 
@@ -366,14 +366,14 @@ Varsayılan bir parametre değerini belirtirken kullanılan '=' operatöründe b
 '->' ifadesini kullanırken her zaman boşluk kullanmalıyız.
 
 
-#Doğru kullanım:
+# Doğru kullanım:
 
     def munge(input: AnyStr): ...
 
     def munge() -> AnyStr: ...
 
 
-#Yanlış kullanım:
+# Yanlış kullanım:
 
     def munge(input:AnyStr): ...
 
@@ -383,14 +383,14 @@ Varsayılan bir parametre değerini belirtirken kullanılan '=' operatöründe b
 Default değer atanırken boşluk kullanmalıyız.
 
 
-#Doğru kullanım:
+# Doğru kullanım:
 
     def munge(sep: AnyStr = None): ...
 
     def munge(input: AnyStr, sep: AnyStr = None, limit=1000): ...
 
 
-#Yanlış kullanım:
+# Yanlış kullanım:
 
     def munge(input: AnyStr=None): ...
 
@@ -400,7 +400,7 @@ Default değer atanırken boşluk kullanmalıyız.
 Birleşik ifadeler genellikle tavsiye edilmez.
 
 
-#Doğru kullanım:
+# Doğru kullanım:
 
     if foo == 'blah':
 
@@ -413,7 +413,7 @@ Birleşik ifadeler genellikle tavsiye edilmez.
     do_three()
 
 
-#Tercihen:
+# Tercihen:
 
     if foo == 'blah': do_blah_thing()
 
@@ -423,7 +423,7 @@ Birleşik ifadeler genellikle tavsiye edilmez.
 if/for/while kullanılırken dikkat etmemiz gereken noktalar:
 
 
-#Tercihen:
+# Tercihen:
 
     if foo == 'blah': do_blah_thing()
 
@@ -432,7 +432,7 @@ if/for/while kullanılırken dikkat etmemiz gereken noktalar:
     while t < 10: t = delay()
 
 
-#Kesinlikle kullanmamamız gereken yapı:
+# Kesinlikle kullanmamamız gereken yapı:
 
     if foo == 'blah': do_blah_thing()
 
@@ -457,12 +457,12 @@ Block comment-ler '#' ifadesi ile başlamalıdır.
 Inline comment-larda
 
 
-#Doğru kullanım:
+# Doğru kullanım:
 
     x = x + 1                 # Compensate for border
 
 
-#Yanlış kullanım:
+# Yanlış kullanım:
 
     x = x + 1                 # Increment x
 
@@ -482,7 +482,7 @@ Optional plotz says to frobnicate the bizbaz first.
 Type değişkenlerinde PEP 484'e göre kısa isimler kullanmalıyız. Type değişkenlerine genellikle _ ile başlayan son ekler eklenir.
 
 
-#Örnek olarak:
+# Örnek olarak:
 
     from typing import TypeVar
 
@@ -495,12 +495,12 @@ Type değişkenlerinde PEP 484'e göre kısa isimler kullanmalıyız. Type deği
 is not operatörü not ... is den daha kullanışlıdır.
 
 
-#Doğru kullanım:
+# Doğru kullanım:
 
     if foo is not None:
 
 
-#Tercihen:
+# Tercihen:
 
     if not foo is None:
 
@@ -508,12 +508,12 @@ is not operatörü not ... is den daha kullanışlıdır.
 Tanımlama işlemlerinde lambda yerine def fonksiyonunu kullanmalıyız.
 
 
-#Doğru kullanım:
+# Doğru kullanım:
 
     def f(x): return 2*x
 
 
-#Yanlış kullanım:
+# Yanlış kullanım:
 
     f = lambda x: 2*x
 
